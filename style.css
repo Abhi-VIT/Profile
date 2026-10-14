@@ -13,7 +13,7 @@
   --bg-card-hover: #FFFFFF;
   --bg-icon-tile: #EFE6D5;
   --bg-tag: #E6DDD0;
-  --bg-nav: rgba(244, 239, 230, 0.88);
+  --bg-nav: rgba(244, 239, 230, 0.9);
 
   --ink-primary: #1C1917;
   --ink-secondary: #44403C;
@@ -42,7 +42,7 @@
   --bg-card-hover: #2A2521;
   --bg-icon-tile: #2E2823;
   --bg-tag: #2C2621;
-  --bg-nav: rgba(20, 18, 16, 0.88);
+  --bg-nav: rgba(20, 18, 16, 0.9);
 
   --ink-primary: #F4EFE6;
   --ink-secondary: #D6CFC4;
@@ -61,7 +61,7 @@
 }
 
 /* ==========================================================================
-   Base Reset & Editorial Foundations
+   Base Reset & Editorial Typography
    ========================================================================== */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -161,11 +161,11 @@ button, input, textarea {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 22px;
 }
 
 .nav-menu a {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--ink-secondary);
   padding: 4px 0;
@@ -184,7 +184,6 @@ button, input, textarea {
   gap: 10px;
 }
 
-/* Tactile Beige / Dark Mode Pill Switcher */
 .theme-switcher {
   display: inline-flex;
   align-items: center;
@@ -225,16 +224,16 @@ button, input, textarea {
 }
 
 /* ==========================================================================
-   Editorial Buttons
+   Buttons & Action Links
    ========================================================================== */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 11px 22px;
+  padding: 11px 20px;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
@@ -267,18 +266,24 @@ button, input, textarea {
   transform: translateY(-2px);
 }
 
+.btn-sm {
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  border-radius: 7px;
+}
+
 /* ==========================================================================
-   Hero Section with AI Vector Illustration
+   Hero / About Section with AI Vector Illustration
    ========================================================================== */
 .hero-section {
-  padding: 68px 0 64px;
+  padding: 64px 0 60px;
   border-bottom: 1px solid var(--border-hairline);
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
-  gap: 52px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -287,7 +292,7 @@ button, input, textarea {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .availability-pill {
@@ -316,11 +321,11 @@ button, input, textarea {
 
 .hero-headline {
   font-family: var(--font-serif);
-  font-size: clamp(2.35rem, 4.5vw, 3.65rem);
+  font-size: clamp(2.25rem, 4.3vw, 3.45rem);
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.13;
   letter-spacing: -0.02em;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .hero-headline em {
@@ -329,26 +334,39 @@ button, input, textarea {
   color: var(--accent-terracotta);
 }
 
+.hero-role-banner {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  margin-bottom: 10px;
+}
+
 .hero-bio {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--ink-secondary);
-  max-width: 610px;
-  margin-bottom: 26px;
+  max-width: 620px;
+  margin-bottom: 12px;
+}
+
+.hero-focus-note {
+  font-size: 0.88rem;
+  color: var(--accent-terracotta);
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .hero-cta-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 32px;
+  gap: 10px;
+  margin-bottom: 28px;
 }
 
-/* Editorial Key Facts Ledger in Hero */
 .hero-ledger {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  padding-top: 24px;
+  padding-top: 22px;
   border-top: 1px solid var(--border-hairline);
 }
 
@@ -359,14 +377,14 @@ button, input, textarea {
 
 .ledger-val {
   font-family: var(--font-serif);
-  font-size: 1.45rem;
+  font-size: 1.42rem;
   font-weight: 700;
   color: var(--ink-primary);
   line-height: 1.2;
 }
 
 .ledger-lbl {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--ink-muted);
   margin-top: 2px;
 }
@@ -374,7 +392,7 @@ button, input, textarea {
 /* Vector Portrait Frame */
 .vector-frame-wrap {
   position: relative;
-  max-width: 410px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -431,7 +449,7 @@ button, input, textarea {
    Section Scaffolding
    ========================================================================== */
 .section-block {
-  padding: 72px 0;
+  padding: 68px 0;
   border-bottom: 1px solid var(--border-hairline);
 }
 
@@ -445,11 +463,11 @@ button, input, textarea {
   align-items: flex-end;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .section-kicker {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--accent-terracotta);
@@ -459,20 +477,14 @@ button, input, textarea {
 
 .section-heading {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
-.section-lead {
-  font-size: 0.96rem;
-  color: var(--ink-secondary);
-  max-width: 520px;
-}
-
 /* ==========================================================================
-   Visual Skill Grid (Uses images/<skill>.png inside Beige/Dark Cards)
+   Visual Skill Grid (Loads from images/<skill>.png)
    ========================================================================== */
 .filter-pills {
   display: flex;
@@ -505,18 +517,18 @@ button, input, textarea {
 
 .skill-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
 }
 
 .skill-img-card {
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
   border-radius: 14px;
-  padding: 14px 16px;
+  padding: 13px 15px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 13px;
   box-shadow: var(--shadow-editorial);
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -534,8 +546,8 @@ button, input, textarea {
 }
 
 .skill-icon-box {
-  width: 52px;
-  height: 52px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   background: var(--bg-icon-tile);
   border: 1px solid var(--border-hairline);
@@ -552,27 +564,22 @@ button, input, textarea {
   border-radius: 8px;
 }
 
-.skill-card-text {
-  min-width: 0;
-}
-
 .skill-card-name {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--ink-primary);
   line-height: 1.25;
 }
 
 .skill-card-sub {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   color: var(--ink-muted);
   margin-top: 2px;
 }
 
-/* Soft Skills Strip */
 .soft-skills-bar {
-  margin-top: 28px;
-  padding: 20px 24px;
+  margin-top: 24px;
+  padding: 18px 22px;
   border-radius: 14px;
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
@@ -599,19 +606,19 @@ button, input, textarea {
 }
 
 /* ==========================================================================
-   Projects Showcase (Editorial Cards + Expandable Case Studies)
+   Projects Showcase (With Verified GitHub & Colab Links + GIF Support)
    ========================================================================== */
 .projects-editorial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 .editorial-project-card {
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
   border-radius: 16px;
-  padding: 28px;
+  padding: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -630,19 +637,16 @@ button, input, textarea {
   box-shadow: 0 0 0 2px var(--accent-terracotta-soft);
 }
 
-. editorial-project-card.hidden {
-  display: none;
-}
-
 .proj-meta-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .proj-domain {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -651,32 +655,48 @@ button, input, textarea {
 
 .proj-date {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--ink-muted);
+}
+
+.proj-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .proj-heading {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  line-height: 1.28;
-  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.proj-gif-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border-hairline);
+  flex-shrink: 0;
 }
 
 .proj-body {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   color: var(--ink-secondary);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .case-study-drawer {
   display: none;
-  margin-bottom: 18px;
-  padding: 14px 16px;
+  margin-bottom: 16px;
+  padding: 13px 15px;
   border-radius: 10px;
   background: var(--bg-alt);
   border-left: 3px solid var(--accent-terracotta);
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--ink-secondary);
 }
 
@@ -684,14 +704,24 @@ button, input, textarea {
   display: block;
 }
 
-.case-study-drawer strong {
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.stack-chip {
+  font-size: 0.73rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-tag);
   color: var(--ink-primary);
-  display: block;
-  margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .proj-bottom {
-  padding-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--border-hairline);
   display: flex;
   align-items: center;
@@ -700,29 +730,36 @@ button, input, textarea {
   flex-wrap: wrap;
 }
 
-.stack-list {
-  display: flex;
-  flex-wrap: wrap;
+.proj-link-btn {
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
+  padding: 6px 13px;
+  border-radius: 7px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-strong);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-primary);
 }
 
-.stack-chip {
-  font-size: 0.74rem;
-  padding: 3px 9px;
-  border-radius: 6px;
-  background: var(--bg-tag);
-  color: var(--ink-primary);
-  font-weight: 500;
+.proj-link-btn:hover {
+  background: var(--accent-terracotta);
+  border-color: var(--accent-terracotta);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .proj-link-btn:hover {
+  color: #141210;
 }
 
 .drawer-toggle {
   background: transparent;
   border: none;
   color: var(--accent-terracotta);
-  font-size: 0.8rem;
+  font-size: 0.79rem;
   font-weight: 700;
   cursor: pointer;
-  padding: 4px 0;
 }
 
 .drawer-toggle:hover {
@@ -734,16 +771,28 @@ button, input, textarea {
    ========================================================================== */
 .two-col-editorial {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 26px;
 }
 
 .editorial-card {
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
   border-radius: 16px;
-  padding: 30px;
+  padding: 28px;
   box-shadow: var(--shadow-editorial);
+}
+
+.exp-entry {
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.exp-entry:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .card-eyebrow {
@@ -751,12 +800,13 @@ button, input, textarea {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .date-tag {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   padding: 4px 10px;
   border-radius: 6px;
   background: var(--bg-tag);
@@ -765,27 +815,27 @@ button, input, textarea {
 
 .editorial-h3 {
   font-family: var(--font-serif);
-  font-size: 1.42rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .editorial-org {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--accent-terracotta);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .editorial-bullets {
   display: grid;
-  gap: 12px;
+  gap: 9px;
 }
 
 .editorial-bullets li {
   position: relative;
-  padding-left: 18px;
-  font-size: 0.94rem;
+  padding-left: 16px;
+  font-size: 0.92rem;
   color: var(--ink-secondary);
 }
 
@@ -799,26 +849,26 @@ button, input, textarea {
 }
 
 .highlight-box {
-  padding: 16px 18px;
+  padding: 15px 17px;
   border-radius: 12px;
   background: var(--bg-alt);
   border: 1px solid var(--border-hairline);
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .highlight-box strong {
   display: block;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--ink-primary);
   margin-bottom: 4px;
 }
 
 .highlight-box span {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
   color: var(--ink-secondary);
 }
 
-/* IEEE Research Paper Showcase & Interactive Experiment Explorer */
+/* IEEE Research Paper Showcase */
 .research-showcase {
   margin-top: 28px;
   background: var(--bg-card);
@@ -827,9 +877,16 @@ button, input, textarea {
   padding: 32px;
   box-shadow: var(--shadow-editorial);
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.research-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
 }
 
 .experiment-box {
@@ -868,24 +925,20 @@ button, input, textarea {
 }
 
 .exp-detail-pane {
-  font-size: 0.88rem;
+  font-size: 0.87rem;
   color: var(--ink-secondary);
   line-height: 1.6;
 }
 
 /* ==========================================================================
-   Education (CGPA 8.69) & Certifications
+   Education (CGPA 8.69), Languages & Verified Certifications
    ========================================================================== */
 .degree-block {
-  padding: 22px;
+  padding: 20px;
   border-radius: 14px;
   background: var(--bg-alt);
   border: 1px solid var(--border-hairline);
-  margin-bottom: 16px;
-}
-
-.degree-block:last-child {
-  margin-bottom: 0;
+  margin-bottom: 14px;
 }
 
 .cgpa-pill {
@@ -899,6 +952,31 @@ button, input, textarea {
   color: var(--accent-sage);
 }
 
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.lang-card {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-hairline);
+}
+
+.lang-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: block;
+}
+
+.lang-lvl {
+  font-size: 0.76rem;
+  color: var(--ink-muted);
+}
+
 .cert-table {
   display: grid;
   gap: 10px;
@@ -909,22 +987,50 @@ button, input, textarea {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 12px 16px;
-  border-radius: 10px;
+  padding: 13px 16px;
+  border-radius: 11px;
   background: var(--bg-alt);
   border: 1px solid var(--border-hairline);
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.cert-entry-name {
+.cert-entry:hover {
+  border-color: var(--accent-terracotta);
+  transform: translateX(3px);
+}
+
+.cert-entry-title {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--ink-primary);
+  display: block;
 }
 
-.cert-entry-org {
-  font-family: var(--font-mono);
+.cert-entry-sub {
   font-size: 0.76rem;
   color: var(--ink-muted);
+}
+
+.cert-verify-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  color: var(--accent-terracotta);
   white-space: nowrap;
+}
+
+.cert-verify-link:hover {
+  background: var(--accent-terracotta);
+  border-color: var(--accent-terracotta);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .cert-verify-link:hover {
+  color: #141210;
 }
 
 /* ==========================================================================
@@ -1021,9 +1127,6 @@ button, input, textarea {
   opacity: 1;
 }
 
-/* ==========================================================================
-   Responsive Design
-   ========================================================================== */
 @media (max-width: 960px) {
   .hero-grid,
   .two-col-editorial,
@@ -1060,5 +1163,9 @@ button, input, textarea {
 
   .brand-role {
     display: none;
+  }
+
+  .lang-grid {
+    grid-template-columns: 1fr;
   }
 }
