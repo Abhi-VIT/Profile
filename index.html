@@ -1,429 +1,2878 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" data-theme="obsidian">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Portfolio of Abhishek Kumar, Data Science Master's student at VIT-AP, IEEE Researcher, and TCS Digital Selectee specializing in ML, Deep Learning & Knowledge Graphs." />
-  <title>Abhishek Kumar</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar | Data Scientist, Machine Learning &amp; Analytics Portfolio</title>
+  <meta name="description" content="Official Portfolio of Abhishek Kumar — M.Sc. Data Science at VIT-AP (CGPA: 8.69), AI-Powered Data Insights Intern at TOEHO AI, TCS NQT Prime &amp; Digital Selected, and IEEE Published Deep Learning Researcher." />
+  <link rel="canonical" href="https://abhi-vit.github.io/Profile/" />
+  <!-- External Stylesheet for GitHub Pages (https://github.com/Abhi-VIT/Profile/) -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Embedded Fallback Styles so single-file preview renders identically -->
+  <style id="inline-fallback-css">
+/* ==========================================================================
+   Abhishek Kumar — Interactive Data Science & ML Portfolio
+   Repository: https://github.com/Abhi-VIT/Profile/
+   Live Site:  https://abhi-vit.github.io/Profile/
+   Pure CSS3 Architecture (Zero SVG Clutter, 3D Tilt, Spotlight & Multi-Theme)
+   ========================================================================== */
 
+:root,
+[data-theme="obsidian"] {
+  --bg-base: #05070d;
+  --bg-elevated: #0b101e;
+  --bg-surface: rgba(15, 23, 42, 0.72);
+  --bg-surface-hover: rgba(23, 35, 64, 0.88);
+  --bg-glass: rgba(8, 12, 24, 0.82);
+  --bg-chip: rgba(99, 102, 241, 0.14);
+
+  --text-main: #f8fafc;
+  --text-body: #cbd5e1;
+  --text-dim: #94a3b8;
+
+  --primary: #6366f1;
+  --secondary: #06b6d4;
+  --tertiary: #10b981;
+  --highlight: #f59e0b;
+
+  --border: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(99, 102, 241, 0.5);
+  --shadow: 0 20px 50px -15px rgba(2, 6, 23, 0.75);
+  --glow: 0 0 32px rgba(99, 102, 241, 0.32);
+  --gradient-main: linear-gradient(135deg, #6366f1 0%, #06b6d4 52%, #10b981 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.02) 100%);
+}
+
+[data-theme="emerald"] {
+  --bg-base: #040d0a;
+  --bg-elevated: #091914;
+  --bg-surface: rgba(12, 31, 24, 0.74);
+  --bg-surface-hover: rgba(18, 45, 35, 0.9);
+  --bg-glass: rgba(6, 18, 14, 0.84);
+  --bg-chip: rgba(16, 185, 129, 0.15);
+
+  --text-main: #ecfdf5;
+  --text-body: #a7f3d0;
+  --text-dim: #6ee7b7;
+
+  --primary: #10b981;
+  --secondary: #06b6d4;
+  --tertiary: #3b82f6;
+  --highlight: #fbbf24;
+
+  --border: rgba(110, 231, 183, 0.15);
+  --border-strong: rgba(16, 185, 129, 0.55);
+  --shadow: 0 20px 50px -15px rgba(2, 18, 12, 0.8);
+  --glow: 0 0 32px rgba(16, 185, 129, 0.32);
+  --gradient-main: linear-gradient(135deg, #10b981 0%, #06b6d4 55%, #3b82f6 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.02) 100%);
+}
+
+[data-theme="solaris"] {
+  --bg-base: #0c0906;
+  --bg-elevated: #18120c;
+  --bg-surface: rgba(32, 23, 15, 0.76);
+  --bg-surface-hover: rgba(46, 33, 21, 0.9);
+  --bg-glass: rgba(18, 13, 8, 0.85);
+  --bg-chip: rgba(245, 158, 11, 0.15);
+
+  --text-main: #fffbeb;
+  --text-body: #fde68a;
+  --text-dim: #d97706;
+
+  --primary: #f59e0b;
+  --secondary: #ec4899;
+  --tertiary: #10b981;
+  --highlight: #38bdf8;
+
+  --border: rgba(251, 191, 36, 0.16);
+  --border-strong: rgba(245, 158, 11, 0.55);
+  --shadow: 0 20px 50px -15px rgba(15, 8, 2, 0.8);
+  --glow: 0 0 32px rgba(245, 158, 11, 0.3);
+  --gradient-main: linear-gradient(135deg, #f59e0b 0%, #ec4899 60%, #8b5cf6 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(245, 158, 11, 0.1) 0%, rgba(236, 72, 153, 0.02) 100%);
+}
+
+[data-theme="light"] {
+  --bg-base: #f8fafc;
+  --bg-elevated: #f1f5f9;
+  --bg-surface: rgba(255, 255, 255, 0.9);
+  --bg-surface-hover: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.86);
+  --bg-chip: rgba(79, 70, 229, 0.1);
+
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-dim: #64748b;
+
+  --primary: #4f46e5;
+  --secondary: #0891b2;
+  --tertiary: #059669;
+  --highlight: #d97706;
+
+  --border: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(79, 70, 229, 0.45);
+  --shadow: 0 14px 34px -10px rgba(15, 23, 42, 0.08);
+  --glow: 0 0 24px rgba(79, 70, 229, 0.18);
+  --gradient-main: linear-gradient(135deg, #4f46e5 0%, #0891b2 55%, #059669 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(79, 70, 229, 0.06) 0%, rgba(8, 145, 178, 0.01) 100%);
+}
+
+/* ==========================================================================
+   Reset & Global Setup
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  line-height: 1.65;
+  overflow-x: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Top Reading Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--gradient-main);
+  z-index: 2000;
+  box-shadow: var(--glow);
+  transition: width 0.08s linear;
+}
+
+/* Dynamic Cursor Spotlight Overlay */
+.cursor-spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    650px circle at var(--cursor-x, 50vw) var(--cursor-y, 30vh),
+    rgba(99, 102, 241, 0.09),
+    transparent 45%
+  );
+}
+
+/* ==========================================================================
+   Sticky Glass Navigation Bar
+   ========================================================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--bg-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-monogram {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--gradient-main);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+  box-shadow: var(--glow);
+}
+
+.brand-tag {
+  font-size: 0.76rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--bg-chip);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-body);
+  padding: 6px 2px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-main);
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text-main);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cmd-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cmd-trigger:hover {
+  border-color: var(--border-strong);
+  color: var(--text-main);
+}
+
+.kbd {
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.theme-select {
+  padding: 7px 11px;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-toggle {
+  display: none;
+  padding: 8px 12px;
+  border-radius: 9px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Buttons & Status Indicators
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 11px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary {
+  background: var(--gradient-main);
+  color: #ffffff;
+  box-shadow: var(--glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn-outline {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border-color: var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-surface-hover);
+  transform: translateY(-2px);
+}
+
+.btn-xs {
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  border-radius: 8px;
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.38);
+  color: var(--tertiary);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  box-shadow: 0 0 10px var(--tertiary);
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+/* ==========================================================================
+   Hero Section & Interactive Console
+   ========================================================================== */
+.hero {
+  position: relative;
+  padding: 132px 0 74px;
+  overflow: hidden;
+}
+
+#constellation-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.hero-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.meta-chip {
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.hero-heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  margin-bottom: 14px;
+}
+
+.gradient-span {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.typewriter-row {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--secondary);
+  min-height: 2.1rem;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cursor-caret {
+  display: inline-block;
+  width: 10px;
+  height: 1.25em;
+  background: var(--primary);
+  animation: blinkCaret 0.9s step-end infinite;
+}
+
+@keyframes blinkCaret {
+  50% { opacity: 0; }
+}
+
+.hero-lead {
+  font-size: 1.03rem;
+  color: var(--text-body);
+  max-width: 630px;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.quick-links-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+.link-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text-main);
+  transform: translateY(-2px);
+}
+
+.chip-prefix {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* Interactive Python REPL / Telemetry Card */
+.telemetry-card {
+  background: var(--bg-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.telemetry-card:hover {
+  border-color: var(--border-strong);
+}
+
+.window-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+
+.window-dots {
+  display: flex;
+  gap: 7px;
+}
+
+.w-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.w-dot.red { background: #ef4444; }
+.w-dot.amber { background: #f59e0b; }
+.w-dot.green { background: #10b981; }
+
+.window-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.win-tab {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.win-tab.active {
+  background: var(--bg-chip);
+  color: var(--text-main);
+  border-color: var(--border);
+}
+
+.window-pane {
+  padding: 20px;
+  font-size: 0.83rem;
+  line-height: 1.75;
+  display: none;
+}
+
+.window-pane.active {
+  display: block;
+}
+
+.kw { color: #c084fc; font-weight: 700; }
+.fn { color: #38bdf8; font-weight: 700; }
+.str { color: #34d399; }
+.num { color: #fbbf24; font-weight: 700; }
+.cm { color: var(--text-dim); font-style: italic; }
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 16px 20px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--gradient-subtle);
+}
+
+.kpi-box {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.kpi-num {
+  font-size: 1.38rem;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.kpi-caption {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* ==========================================================================
+   Animated Metrics Bento Strip
+   ========================================================================== */
+.bento-metrics {
+  padding: 10px 0 42px;
+}
+
+.bento-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.bento-stat {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.bento-stat:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-4px);
+}
+
+.stat-index {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.stat-big {
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.stat-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.stat-desc {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: 3px;
+}
+
+/* ==========================================================================
+   Section Layout & Headers
+   ========================================================================== */
+.section {
+  padding: 72px 0;
+  position: relative;
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 38px;
+}
+
+.eyebrow-num {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.sec-sub {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  max-width: 540px;
+}
+
+/* ==========================================================================
+   Experience & Achievements Dual Layout
+   ========================================================================== */
+.dual-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.surface-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.25s ease;
+}
+
+.surface-card:hover {
+  border-color: var(--border-strong);
+}
+
+.card-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.badge-date {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-chip);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.card-h3 {
+  font-size: 1.32rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.org-line {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 18px;
+}
+
+.clean-list {
+  display: grid;
+  gap: 12px;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-body);
+  font-size: 0.94rem;
+}
+
+.clean-list li::before {
+  content: '>>';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.prime-card {
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
+  border-color: rgba(245, 158, 11, 0.38);
+}
+
+.prime-pill {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--highlight);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.milestone-boxes {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.milestone-box {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.milestone-box strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.milestone-box span {
+  font-size: 0.85rem;
+  color: var(--text-body);
+}
+
+/* ==========================================================================
+   Key Projects Grid & Interactive Workbench Simulator
+   ========================================================================== */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-tab {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-body);
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+.project-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+  gap: 22px;
+}
+
+.proj-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  transition: transform 0.22s ease, border-color 0.22s ease;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.proj-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-main);
+}
+
+.proj-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-5px);
+}
+
+.proj-card.hidden {
+  display: none;
+}
+
+.proj-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.proj-idx {
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--bg-chip);
+  color: var(--primary);
+}
+
+.proj-year {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.proj-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.proj-role {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.proj-summary {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.arch-flow {
+  padding: 11px 13px;
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  font-size: 0.75rem;
+}
+
+.arch-flow-title {
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.68rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.arch-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  color: var(--text-main);
+}
+
+.arch-sep {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.proj-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-pill {
+  font-size: 0.73rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-chip);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+}
+
+/* Interactive Project Workbench Drawer */
+.workbench-panel {
+  margin-top: 32px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.workbench-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sim-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sim-tab {
+  padding: 7px 14px;
+  border-radius: 9px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sim-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.sim-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.sim-controls-box {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.sim-output-box {
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.node-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.node-btn {
+  padding: 8px 13px;
+  border-radius: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.node-btn.active {
+  background: var(--bg-chip);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+/* ==========================================================================
+   IEEE Research & Interactive CNN Hyperparameter Lab
+   ========================================================================== */
+.research-lab {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0.06) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.cnn-simulator {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.sim-select-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.sim-field label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.sim-field select {
+  width: 100%;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#cnn-chart {
+  width: 100%;
+  height: 170px;
+  background: var(--bg-base);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.cnn-readout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--text-body);
+}
+
+/* ==========================================================================
+   Interactive Skills Matrix & Proficiency Bars
+   ========================================================================== */
+.skills-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 22px;
+}
+
+.skill-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.skill-box-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.skill-cat-name {
+  font-size: 1.06rem;
+  font-weight: 800;
+}
+
+.skill-cat-code {
+  font-size: 0.74rem;
+  color: var(--secondary);
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--bg-chip);
+}
+
+.skill-bars {
+  display: grid;
+  gap: 12px;
+}
+
+.skill-row-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.bar-track {
+  height: 7px;
+  width: 100%;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--gradient-main);
+  border-radius: 999px;
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Education (CGPA 8.69) & Certifications
+   ========================================================================== */
+.edu-cards {
+  display: grid;
+  gap: 18px;
+}
+
+.edu-item {
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.cgpa-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.16);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: var(--tertiary);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.cert-grid {
+  display: grid;
+  gap: 11px;
+}
+
+.cert-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 16px;
+  border-radius: 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.cert-row:hover {
+  border-color: var(--border-strong);
+  transform: translateX(4px);
+}
+
+.cert-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.cert-org {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Contact Section & Command Palette Modal
+   ========================================================================== */
+.contact-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 34px;
+}
+
+.contact-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.form-box {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.field-group {
+  margin-bottom: 14px;
+}
+
+.field-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-body);
+  margin-bottom: 6px;
+}
+
+.input-ctrl {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.input-ctrl:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Command Palette Overlay (Ctrl+K) */
+.cmd-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.76);
+  backdrop-filter: blur(8px);
+  z-index: 3000;
+  display: none;
+  place-items: center;
+  padding: 20px;
+}
+
+.cmd-backdrop.open {
+  display: grid;
+}
+
+.cmd-modal {
+  width: 100%;
+  max-width: 580px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.cmd-input-wrap {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cmd-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-size: 0.98rem;
+  outline: none;
+}
+
+.cmd-list {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.cmd-item {
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.cmd-item:hover {
+  background: var(--bg-chip);
+  color: var(--text-main);
+}
+
+.footer {
+  padding: 34px 0 46px;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.toast {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  box-shadow: var(--glow);
+  transform: translateY(90px);
+  opacity: 0;
+  transition: all 0.28s ease;
+  z-index: 4000;
+  pointer-events: none;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hero-layout,
+  .dual-grid,
+  .sim-stage,
+  .research-lab,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background: var(--bg-elevated);
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: inline-block;
+  }
+
+  .cmd-trigger span {
+    display: none;
+  }
+
+  .bento-row,
+  .sim-select-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-brand">
-        <h1 class="name">Abhishek Kumar</h1>
-        <p class="title">Data Science Professional</p>
-      </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#Achievement">Achievements</a>
-        <a href="#experience">Experience</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact" class="btn-hire">Hire Me</a>
+  <!-- Top Reading Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Interactive Cursor Spotlight -->
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-monogram mono">AK</span>
+        <span>Abhishek Kumar</span>
+        <span class="brand-tag mono">CGPA 8.69</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#experience" class="active">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#workbench">Interactive Lab</a></li>
+          <li><a href="#research">IEEE Research</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
+
+      <div class="nav-controls">
+        <button class="cmd-trigger" id="cmd-open-btn" type="button" title="Open Quick Command Palette">
+          <span>Quick Jump</span>
+          <span class="kbd mono">Ctrl + K</span>
+        </button>
+
+        <select class="theme-select" id="theme-select" aria-label="Select Color Theme">
+          <option value="obsidian">Theme: Cyber Obsidian</option>
+          <option value="emerald">Theme: Emerald Matrix</option>
+          <option value="solaris">Theme: Solaris Gold</option>
+          <option value="light">Theme: Alabaster Light</option>
+        </select>
+
+        <button class="mobile-toggle mono" id="mobile-toggle" type="button" aria-label="Toggle Menu">
+          MENU
+        </button>
+      </div>
     </div>
   </header>
 
-  <main class="container main">
-    <section id="about" class="card">
-      <div class="about-section">
-        <div class="about-photo-container">
-          <img src="images/profile.jpg" alt="Abhishek Kumar" class="about-photo">
-        </div>
-        <div class="about-text">
-          <h2>About <span class="badge-open-to-work">Open to Data Science / ML roles</span></h2>
-          <p class="hero-subtitle">Data Science Master's student at VIT-AP | Published IEEE Researcher | TCS Digital (AI
-            Cloud) Selectee | Specializing in ML, Deep Learning & Knowledge Graphs</p>
-          <p class="hero-learning">Currently exploring LLMs and RAG pipelines | Looking for Data Science / ML Engineer
-            roles (2026)</p>
-          <p>
-            <a href="tel:(+91) 7888873321"><i class="fas fa-phone-alt"></i> (+91) 7888873321</a> •
-            <a href="mailto:abhishek.k.jalandhar@gmail.com"><i class="fas fa-envelope"></i>
-              abhishek.k.jalandhar@gmail.com</a> •
-            <span><i class="fas fa-map-marker-alt"></i> Amaravati, India</span>
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <canvas id="constellation-canvas"></canvas>
+      <div class="container hero-layout">
+        <div>
+          <div class="hero-meta-row">
+            <span class="live-pill">
+              <span class="pulse-dot"></span>
+              Available for Data Science, ML &amp; AI Cloud Roles
+            </span>
+            <span class="meta-chip mono">Bettiah, India</span>
+            <span class="meta-chip mono">M.Sc. Data Science @ VIT-AP (8.69 CGPA)</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Building Intelligent <span class="gradient-span">Data &amp; ML Systems</span>
+          </h1>
+
+          <div class="typewriter-row mono">
+            <span>&gt;</span>
+            <span id="typewriter-text">Data Scientist &amp; Analytics Specialist</span>
+            <span class="cursor-caret" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-lead">
+            I'm <strong>Abhishek Kumar</strong> — a Data Science postgraduate (<strong>8.69 CGPA</strong> at VIT-AP) with hands-on experience in machine learning, deep learning, data cleaning, feature engineering, cloud integration, deployment, and model monitoring. Skilled in Python, R, SQL, Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, and Neo4j to deliver scalable, user-centric data solutions.
           </p>
-          <a href="https://raw.githubusercontent.com/Abhi-VIT/Profile/main/Resume.pdf" class="btn-resume"
-            target="_blank"><i class="fas fa-file-pdf"></i> Download Resume / CV</a>
-          <div class="social-buttons" style="margin-top: 15px;">
-            <a href="https://www.linkedin.com/in/abhipy/" target="_blank" class="social-btn"><i
-                class="fab fa-linkedin"></i> Connect on LinkedIn</a>
-            <a href="https://github.com/Abhi-VIT" target="_blank" class="social-btn"><i class="fab fa-github"></i> View
-              GitHub</a>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore 5 Key Projects &rarr;</a>
+            <a href="#workbench" class="btn btn-outline">Launch Interactive Lab</a>
+            <a href="https://github.com/Abhi-VIT/Profile/" target="_blank" rel="noopener noreferrer" class="btn btn-outline mono">GitHub Repo &nearr;</a>
+          </div>
+
+          <div class="quick-links-bar">
+            <a href="https://www.linkedin.com/in/abhipy" target="_blank" rel="noopener noreferrer" class="link-chip">
+              <span class="chip-prefix mono">[in]</span> linkedin.com/in/abhipy
+            </a>
+            <a href="https://github.com/Abhi-VIT" target="_blank" rel="noopener noreferrer" class="link-chip">
+              <span class="chip-prefix mono">[gh]</span> github.com/Abhi-VIT
+            </a>
+            <a href="https://leetcode.com/u/ft31DEgRSt/" target="_blank" rel="noopener noreferrer" class="link-chip">
+              <span class="chip-prefix mono">[lc]</span> LeetCode Profile
+            </a>
+            <a href="mailto:abhishek.k.jalandhar@gmail.com" class="link-chip">
+              <span class="chip-prefix mono">[@]</span> abhishek.k.jalandhar@gmail.com
+            </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="Achievement" class="card">
-      <h2>Achievements</h2>
-      <div class="achievement-list">
-        <article class="achievement-item">
-          <header>
-            <h3>TCS NQT Digital</h3>
-            <div class="achievement-meta">
-              <span class="company">Tata Consultancy Services</span>
+        <!-- Interactive Multi-Tab Telemetry Console -->
+        <div class="telemetry-card">
+          <div class="window-bar">
+            <div class="window-dots">
+              <span class="w-dot red"></span>
+              <span class="w-dot amber"></span>
+              <span class="w-dot green"></span>
             </div>
-            <div class="duration">
-              Jan 2026
+            <div class="window-tabs">
+              <button class="win-tab active mono" data-pane="pane-py" type="button">profile.py</button>
+              <button class="win-tab mono" data-pane="pane-json" type="button">metrics.json</button>
+              <button class="win-tab mono" data-pane="pane-sh" type="button">deploy.sh</button>
             </div>
-          </header>
-          <p class="experience-description">TCS National Qualifier Test (NQT) - A National Level Exam Conducted by TCS.
-            Crack Aptitude and coding round and call for TCS Prime role interview. Finally selected for TCS Digital Role
-            (AI Cloud).</p>
-        </article>
-      </div>
-    </section>
+          </div>
 
-    <section id="experience" class="card">
-      <h2>Work Experience</h2>
-      <div class="experience-list">
-        <article class="experience-item">
-          <header>
-            <h3>AI-Powered Data Insight Intern</h3>
-            <div class="experience-meta">
-              <span class="company">Toeho AI</span>
-              <span class="location">Ranchi, India</span>
+          <!-- Pane 1: Python Class -->
+          <div class="window-pane active mono" id="pane-py">
+            <div><span class="kw">class</span> <span class="fn">AbhishekKumar</span>:</div>
+            <div>&nbsp;&nbsp;role = <span class="str">"Data Scientist | ML | Analytics"</span></div>
+            <div>&nbsp;&nbsp;education = <span class="str">"M.Sc. Data Science @ VIT-AP"</span></div>
+            <div>&nbsp;&nbsp;cgpa = <span class="num">8.69</span></div>
+            <div>&nbsp;&nbsp;achievement = <span class="str">"TCS AI Cloud (SE) Digital Role"</span></div>
+            <div>&nbsp;&nbsp;internship = <span class="str">"TOEHO AI (Jan 2026 – Present)"</span></div>
+            <div>&nbsp;&nbsp;stack = [<span class="str">"Python"</span>, <span class="str">"R"</span>, <span class="str">"SQL"</span>, <span class="str">"PyTorch"</span>, <span class="str">"TensorFlow"</span>, <span class="str">"Neo4j"</span>]</div>
+            <div>&nbsp;&nbsp;ieee_paper = <span class="str">"CNN LR, Optimizer &amp; Activation Synergy"</span></div>
+          </div>
+
+          <!-- Pane 2: JSON Telemetry -->
+          <div class="window-pane mono" id="pane-json">
+            <div>&#123;</div>
+            <div>&nbsp;&nbsp;<span class="fn">"academic_cgpa"</span>: <span class="num">8.69</span>,</div>
+            <div>&nbsp;&nbsp;<span class="fn">"tcs_nqt_status"</span>: <span class="str">"Qualified Prime &amp; AI Cloud Digital"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="fn">"production_projects"</span>: <span class="num">5</span>,</div>
+            <div>&nbsp;&nbsp;<span class="fn">"certifications"</span>: [<span class="str">"Oracle GenAI"</span>, <span class="str">"AWS"</span>, <span class="str">"ISRO"</span>, <span class="str">"NITW"</span>],</div>
+            <div>&nbsp;&nbsp;<span class="fn">"github_pages"</span>: <span class="str">"abhi-vit.github.io/Profile"</span></div>
+            <div>&#125;</div>
+          </div>
+
+          <!-- Pane 3: Shell Commands -->
+          <div class="window-pane mono" id="pane-sh">
+            <div class="cm"># Push updated portfolio to GitHub Pages</div>
+            <div>$ git remote -v</div>
+            <div><span class="str">origin  https://github.com/Abhi-VIT/Profile.git</span></div>
+            <div>$ git add index.html style.css script.js README.md</div>
+            <div>$ git commit -m <span class="str">"feat: launch interactive v2 portfolio (CGPA 8.69)"</span></div>
+            <div>$ git push origin main</div>
+            <div><span class="fn">&gt;&gt; Live at https://abhi-vit.github.io/Profile/</span></div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <div class="kpi-num mono">8.69</div>
+              <div class="kpi-caption">M.Sc. Data Science CGPA</div>
             </div>
-            <div class="duration">
-              Jan 2026 — Present
+            <div class="kpi-box">
+              <div class="kpi-num mono">Prime</div>
+              <div class="kpi-caption">TCS NQT &amp; AI Cloud Digital</div>
             </div>
-          </header>
-          <p class="experience-description">Designed the architectural workflow for stock analysis software, integrating
-            real-time data ingestion, prediction modeling, and live graph visualizations, while processing and
-            incorporating social media data.</p>
-          <header style="margin-top: 15px;">
-            <h3>Insurance Agent</h3>
-            <div class="experience-meta">
-              <span class="company">Life Insurance Corporation of India</span>
-              <span class="location">Bettiah, India</span>
+            <div class="kpi-box">
+              <div class="kpi-num mono">5+</div>
+              <div class="kpi-caption">End-to-End ML Platforms</div>
             </div>
-            <div class="duration">
-              Oct 2023 — Dec 2025
+            <div class="kpi-box">
+              <div class="kpi-num mono">IEEE</div>
+              <div class="kpi-caption">Published CNN Research</div>
             </div>
-          </header>
-          <p class="experience-description">Lead insurance presentations and community building, collaborative reviewing
-            of insurance policies, and presented policies for education and women's benefits.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="research" class="card">
-      <h2>Research Publications</h2>
-      <div class="research-list">
-        <article class="research-item">
-          <h3>Investigating the Synergistic Effects of Learning Rate, Optimizer, and Activation Function on
-            Convolutional Neural Network Training</h3>
-          <div class="research-meta">
-            <span class="conference">IEEE 5th International Conference on Artificial Intelligence and Signal
-              Processing</span>
-            <span class="year">2025</span>
-            <span class="impact">Impact Factor: 2.8</span>
           </div>
-          <p class="research-summary">Findings: Identified optimal combinations of hyperparameters to significantly
-            improve CNN convergence speed, stability, and generalization on benchmark image datasets.</p>
-          <p class="research-abstract">Convolutional Neural Networks (CNNs) are changing various fields, particularly
-            computer vision. However, achieving optimal CNN performance relies heavily on the selection of
-            hyperparameters like learning rate, optimizer, and activation function. This research empirically
-            investigates how different combinations of these factors collectively impact CNN training dynamics and
-            performance. Through systematic experimentation, we aim to uncover the complex relationships that emerge
-            when these hyperparameters are considered in concert, revealing how dynamic parameter changes affect the
-            overall performance of the model.</p>
-          <div class="research-links">
-            <a href="https://ieeexplore.ieee.org/document/11396244" target="_blank" class="paper-link">View Paper</a>
-            <a href="https://github.com/Abhi-VIT" target="_blank" class="code-link">View Code</a>
-          </div>
-          <p class="technologies">Technologies: PyTorch, TensorFlow, OpenCV, NumPy, Scikit-learn</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <div class="projects">
-        <article class="project">
-          <div class="project-header">
-            <h3>Graph Net</h3>
-            <img src="images/project_logos/graph-network.gif" alt="Graph Net logo" class="project-animation">
-          </div>
-          <p class="muted">Web Crawling, Graph Networks, Knowledge Management</p>
-          <p>Intelligent Knowledge Graph for Data Science Learning. Designed and developed a specialized knowledge graph
-            platform using web crawling techniques, implementing a log-weighted graph network with token system for
-            concept classification. Crawled <strong>over 50 pages</strong> and currently mapped <strong>up to 20
-              concepts</strong>, with architecture ready to exceed this in the future.</p>
-          <p><a href="https://github.com/Abhi-VIT/Graph-Net" target="_blank"><i class="fab fa-github"></i> View project
-              on GitHub</a></p>
-        </article>
-        <article class="project">
-          <div class="project-header">
-            <h3>ARG Data and Modeling</h3>
-            <img src="images/project_logos/data-modeling.gif" alt="ARG Data and Modeling logo"
-              class="project-animation">
-          </div>
-          <p class="muted">Python, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Seaborn</p>
-          <p>No-Code Data Science Platform with drag-and-drop modules for data analysis, preprocessing, and model
-            building. Integrated with TensorFlow, PyTorch, Pandas, and NumPy.</p>
-          <p><a href="https://github.com/Abhi-VIT/ARG-data-and-Modeling" target="_blank"><i class="fab fa-github"></i>
-              View project on GitHub</a></p>
-        </article>
-        <article class="project">
-          <div class="project-header">
-            <h3>Dynamic R Dataset Analysis and Visualization</h3>
-            <img src="images/project_logos/boss.gif" alt="Dynamic R Dataset Analysis and Visualization logo"
-              class="project-animation">
-          </div>
-          <p class="muted">R, Shiny, Statistical Analysis</p>
-          <p>No-Code Statistical Analysis Tool built in R with interactive features for statistical analysis and data
-            visualization.</p>
-          <p><a href="https://github.com/Abhi-VIT" target="_blank"><i class="fab fa-github"></i> View project on
-              GitHub</a></p>
-        </article>
-        <article class="project">
-          <div class="project-header">
-            <h3>Stock Price Prediction</h3>
-            <img src="images/project_logos/stock-price.gif" alt="Stock Price Prediction logo" class="project-animation">
-          </div>
-          <p class="muted">Python, Linear Regression, Yahoo Finance, Sklearn</p>
-          <p>Stock price prediction model using a KNN regressor in machine learning. Achieved <strong>77%
-              accuracy</strong> on <strong>5 years of OHLVC</strong> historical stock data.</p>
-          <p><a href="https://colab.research.google.com/drive/1uUFgjaVV1WcvrtRuEUFCS4r--dzVZRNX?usp=sharing"
-              target="_blank"><i class="fas fa-external-link-alt"></i> View project in Colab</a></p>
-        </article>
-        <article class="project">
-          <div class="project-header">
-            <h3>Stock Analysis and Comparison Tool</h3>
-            <img src="images/project_logos/stock-analysis.gif" alt="Stock Analysis and Comparison Tool logo"
-              class="project-animation">
-          </div>
-          <p class="muted">Python, BeautifulSoup, yfinance, Streamlit</p>
-          <p>Website for stock price analysis and comparison between two stocks.</p>
-          <p><a href="https://github.com/Abhi-VIT/Capstone-Project-Stock-Comparision" target="_blank"><i
-                class="fab fa-github"></i> View project on GitHub</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills-container">
-
-        <div class="skill-category">
-          <h3>Core Languages</h3>
-          <ul class="skills">
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"
-                class="skill-logo">
-              <span class="skill-name">Python</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg"
-                alt="R Programming logo" class="skill-logo">
-              <span class="skill-name">R</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo"
-                class="skill-logo">
-              <span class="skill-name">SQL</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo"
-                class="skill-logo">
-              <span class="skill-name">Java</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>ML & Deep Learning Frameworks</h3>
-          <ul class="skills">
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-                alt="TensorFlow logo" class="skill-logo">
-              <span class="skill-name">TensorFlow</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
-                alt="PyTorch logo" class="skill-logo">
-              <span class="skill-name">PyTorch</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
-                alt="Scikit-learn logo" class="skill-logo">
-              <span class="skill-name">Scikit-learn</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Data & Visualization</h3>
-          <ul class="skills">
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg"
-                alt="Tableau logo" class="skill-logo">
-              <span class="skill-name">Tableau</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas logo"
-                class="skill-logo">
-              <span class="skill-name">Pandas</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy logo"
-                class="skill-logo">
-              <span class="skill-name">NumPy</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Databases</h3>
-          <ul class="skills">
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                alt="MongoDB logo" class="skill-logo">
-              <span class="skill-name">MongoDB</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg" alt="Neo4j logo"
-                class="skill-logo">
-              <span class="skill-name">Neo4j</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo"
-                class="skill-logo">
-              <span class="skill-name">MySQL</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Tools & Cloud</h3>
-          <ul class="skills">
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo"
-                class="skill-logo">
-              <span class="skill-name">Git</span>
-            </li>
-            <li class="skill-item">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                alt="AWS logo" class="skill-logo">
-              <span class="skill-name">AWS</span>
-            </li>
-            <li class="skill-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
-                alt="Oracle Cloud logo" class="skill-logo">
-              <span class="skill-name">Oracle Cloud</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="education" class="card">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li>
-          <strong>Vellore Institute of Technology - AP</strong> — Masters in Data Science
-          <div class="muted">2024 — 2026</div>
-          <p>CGPA: 8.69, Focus areas: data preprocessing, statistical analysis, machine learning, deep learning</p>
-        </li>
-        <li>
-          <strong>Babasaheb Bhimrao Ambedkar Bihar University</strong> — Bachelor in Mathematics
-          <div class="muted">2020 — 2023</div>
-          <p></p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="languages" class="card">
-      <h2>Languages</h2>
-      <div class="language-list">
-        <div class="language-item">
-          <span class="language-name">Hindi</span>
-          <span class="language-level">Native</span>
-        </div>
-        <div class="language-item">
-          <span class="language-name">English</span>
-          <span class="language-level">C2 - Proficient</span>
-        </div>
-        <div class="language-item">
-          <span class="language-name">German</span>
-          <span class="language-level">A2 - Basic</span>
         </div>
       </div>
     </section>
 
-    <section id="certifications" class="card">
-      <h2>Certifications</h2>
-      <ul class="certification-list">
-        <li>
-          <a href="https://drive.google.com/file/d/1nwFQhCezStl0nRIdPzCZ7RJXir5LWZ-O/view?usp=sharing" target="_blank"
-            class="cert-link">Oracle Cloud Infrastructure 2025 Generative AI Professional</a>
-          <span class="cert-issuer">Oracle</span>
-          <span class="cert-year">2025</span>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/17GvCCj5JK8k9RcXmkEq8Cu1d_TMgROVi/view?usp=sharing" target="_blank"
-            class="cert-link">German A1, A2</a>
-          <span class="cert-issuer">IIT Madras</span>
-          <span class="cert-year">2023</span>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/18HQrWJO3WdtOMyaA9GZlAs8-KigD12O8/view" target="_blank"
-            class="cert-link">Python for Advanced Machine Learning</a>
-          <span class="cert-issuer">NIT Warangal</span>
-          <span class="cert-year">2021</span>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1zo2HdFd6-iUqD8RZMNrCHQikbdtii0cz/view?usp=sharing" target="_blank"
-            class="cert-link">AWS Cloud Essentials</a>
-          <span class="cert-issuer">AWS</span>
-          <span class="cert-year">2025</span>
-        </li>
-        <li>
-          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_RYMGzz2GmbF8dvk74_1741420138142_completion_certificate.pdf"
-            target="_blank" class="cert-link">Data Analytics and Visualization Job Simulation</a>
-          <span class="cert-issuer">Accenture North America</span>
-          <span class="cert-year">2021</span>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1qhhzaE7fTk2wl4B2yFatJJWydR6zTMT2/view" target="_blank"
-            class="cert-link">TCS iON Career Edge - Young Professional</a>
-          <span class="cert-issuer">Tata Consultancy Services</span>
-          <span class="cert-year">2024</span>
-        </li>
-      </ul>
+    <!-- Highlight Bento Strip -->
+    <section class="bento-metrics" aria-label="Key Career Metrics">
+      <div class="container bento-row">
+        <div class="bento-stat">
+          <div class="stat-index mono">01 // ACADEMIC EXCELLENCE</div>
+          <div class="stat-big gradient-span mono">8.69 CGPA</div>
+          <div class="stat-title">M.Sc. Data Science (2024–2026)</div>
+          <div class="stat-desc">Vellore Institute of Technology (VIT-AP)</div>
+        </div>
+
+        <div class="bento-stat">
+          <div class="stat-index mono">02 // NATIONAL QUALIFIER</div>
+          <div class="stat-big mono">TCS NQT</div>
+          <div class="stat-title">TCS AI Cloud (SE) Digital Role</div>
+          <div class="stat-desc">Qualified Aptitude &amp; Coding for Prime Roles</div>
+        </div>
+
+        <div class="bento-stat">
+          <div class="stat-index mono">03 // INDUSTRY EXPERIENCE</div>
+          <div class="stat-big mono">TOEHO AI</div>
+          <div class="stat-title">AI-Powered Data Insights Intern</div>
+          <div class="stat-desc">Jan 2026 – Present • Pipelines &amp; Dashboards</div>
+        </div>
+
+        <div class="bento-stat">
+          <div class="stat-index mono">04 // PUBLICATION</div>
+          <div class="stat-big mono">IEEE DL</div>
+          <div class="stat-title">CNN Hyperparameter Synergy</div>
+          <div class="stat-desc">LR, Optimizer &amp; Activation Research</div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="card contact-card">
-      <h2>Contact</h2>
-      <p>Tap to call or email:</p>
-      <p class="contact-links">
-        <a class="btn" href="tel:(+91) 7888873321"><i class="fas fa-phone-alt"></i> Call: (+91) 7888873321</a>
-        <a class="btn" href="mailto:abhishek.k.jalandhar@gmail.com"><i class="fas fa-envelope"></i> Email:
-          abhishek.k.jalandhar@gmail.com</a>
-      </p>
+    <!-- Experience & Achievements -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow-num mono">01 // INDUSTRY &amp; MILESTONES</div>
+            <h2 class="sec-title">Experience &amp; Achievements</h2>
+          </div>
+          <p class="sec-sub">
+            Delivering production data extraction pipelines, software quality testing, and executive analytics dashboards while qualifying for premier national AI Cloud roles.
+          </p>
+        </div>
+
+        <div class="dual-grid">
+          <article class="surface-card">
+            <div class="card-meta-top">
+              <span class="badge-date mono">Jan 2026 – Present</span>
+              <span class="live-pill">Active Internship</span>
+            </div>
+            <h3 class="card-h3">AI-Powered Data Insights Intern</h3>
+            <div class="org-line mono">TOEHO AI</div>
+            <ul class="clean-list">
+              <li>
+                <strong>Social &amp; News Data Extraction:</strong> Built automated extraction workflows to ingest structured data from high-volume social media feeds and news websites.
+              </li>
+              <li>
+                <strong>Software Testing &amp; Issue Resolution:</strong> Executed systematic quality assurance testing across data pipelines to identify bottlenecks, drive software improvements, and resolve defects.
+              </li>
+              <li>
+                <strong>Analytics Dashboard Engineering:</strong> Designed interactive analytics dashboards over extracted datasets to surface real-time operational and market insights.
+              </li>
+            </ul>
+            <div class="chip-list" style="margin-top: 20px;">
+              <span class="tech-pill mono">Python</span>
+              <span class="tech-pill mono">Web Extraction</span>
+              <span class="tech-pill mono">Software QA</span>
+              <span class="tech-pill mono">Analytics Dashboards</span>
+            </div>
+          </article>
+
+          <article class="surface-card prime-card">
+            <div class="card-meta-top">
+              <span class="prime-pill mono">Top National Honour</span>
+            </div>
+            <h3 class="card-h3">TCS NQT Qualified</h3>
+            <p style="color: var(--text-body); font-size: 0.93rem; margin-top: 6px;">
+              Recognized for quantitative aptitude, algorithmic coding proficiency, and cloud engineering readiness in the national Tata Consultancy Services assessment.
+            </p>
+            <div class="milestone-boxes">
+              <div class="milestone-box">
+                <strong>Qualified TCS NQT for Prime Roles</strong>
+                <span>Cleared both the Aptitude and advanced Coding assessment rounds for Prime tier placement.</span>
+              </div>
+              <div class="milestone-box">
+                <strong>Selected for TCS AI Cloud (SE) Digital Role</strong>
+                <span>Selected for the Systems Engineer (SE) Digital track specializing in AI Cloud solutions.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow-num mono">02 // FEATURED SYSTEMS</div>
+            <h2 class="sec-title">Key Projects &amp; Interactive Lab</h2>
+          </div>
+
+          <div class="filter-controls" role="tablist" aria-label="Filter projects">
+            <button class="filter-tab active" data-filter="all" type="button">All Systems (5)</button>
+            <button class="filter-tab" data-filter="ml" type="button">ML &amp; Knowledge Graphs</button>
+            <button class="filter-tab" data-filter="analytics" type="button">R Shiny &amp; Analytics</button>
+            <button class="filter-tab" data-filter="ai" type="button">Conversational AI</button>
+          </div>
+        </div>
+
+        <div class="project-bento">
+          <!-- Project 1 -->
+          <article class="proj-card" data-cat="ml">
+            <div>
+              <div class="proj-header">
+                <span class="proj-idx mono">PRJ // 01</span>
+                <span class="proj-year mono">2025</span>
+              </div>
+              <h3 class="proj-name">Graph Net – Intelligent Knowledge Graph</h3>
+              <div class="proj-role mono">Graph Architecture &amp; Prerequisite Recommender</div>
+              <p class="proj-summary">
+                Built using Python, web scraping, Neo4j, and NetworkX. Developed relevance-ranked graph architecture, personalized recommendation logic, and prerequisite-based knowledge sequencing.
+              </p>
+              <div class="arch-flow">
+                <div class="arch-flow-title mono">Pipeline Architecture</div>
+                <div class="arch-steps mono">
+                  <span>Web Scraping</span><span class="arch-sep">-&gt;</span>
+                  <span>Neo4j Graph</span><span class="arch-sep">-&gt;</span>
+                  <span>NetworkX Rank</span><span class="arch-sep">-&gt;</span>
+                  <span>Path Sequencing</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <div class="chip-list">
+                <span class="tech-pill mono">Python</span>
+                <span class="tech-pill mono">Neo4j</span>
+                <span class="tech-pill mono">NetworkX</span>
+              </div>
+              <button class="btn btn-outline btn-xs mono" type="button" onclick="openInWorkbench('graphnet')">Simulate &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="proj-card" data-cat="ml">
+            <div>
+              <div class="proj-header">
+                <span class="proj-idx mono">PRJ // 02</span>
+                <span class="proj-year mono">2025</span>
+              </div>
+              <h3 class="proj-name">ARG Data &amp; Modeling – No-Code ML Platform</h3>
+              <div class="proj-role mono">Drag-and-Drop Full-Lifecycle ML Studio</div>
+              <p class="proj-summary">
+                Developed drag-and-drop ML workflows supporting data cleaning, feature engineering, visualization, and model training. Backend used TensorFlow, PyTorch, Pandas, and NumPy; frontend enabled rapid prototyping and deployment.
+              </p>
+              <div class="arch-flow">
+                <div class="arch-flow-title mono">Pipeline Architecture</div>
+                <div class="arch-steps mono">
+                  <span>Clean &amp; Impute</span><span class="arch-sep">-&gt;</span>
+                  <span>Feature Eng.</span><span class="arch-sep">-&gt;</span>
+                  <span>TF / PyTorch</span><span class="arch-sep">-&gt;</span>
+                  <span>Deploy</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <div class="chip-list">
+                <span class="tech-pill mono">TensorFlow</span>
+                <span class="tech-pill mono">PyTorch</span>
+                <span class="tech-pill mono">Pandas</span>
+              </div>
+              <button class="btn btn-outline btn-xs mono" type="button" onclick="openInWorkbench('argml')">Simulate &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="proj-card" data-cat="analytics">
+            <div>
+              <div class="proj-header">
+                <span class="proj-idx mono">PRJ // 03</span>
+                <span class="proj-year mono">2025</span>
+              </div>
+              <h3 class="proj-name">Dynamic R Dataset Analysis Tool</h3>
+              <div class="proj-role mono">No-Code R Shiny Statistical Suite</div>
+              <p class="proj-summary">
+                Created an R Shiny platform enabling no-code statistical analysis including OLS, ANOVA, hypothesis testing, correlation, and time-series visualization. Integrated automated dashboards for monitoring insights.
+              </p>
+              <div class="arch-flow">
+                <div class="arch-flow-title mono">Statistical Modules</div>
+                <div class="arch-steps mono">
+                  <span>OLS &amp; ANOVA</span><span class="arch-sep">-&gt;</span>
+                  <span>Hypothesis Tests</span><span class="arch-sep">-&gt;</span>
+                  <span>Time-Series</span><span class="arch-sep">-&gt;</span>
+                  <span>Dashboards</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <div class="chip-list">
+                <span class="tech-pill mono">R</span>
+                <span class="tech-pill mono">R Shiny</span>
+                <span class="tech-pill mono">OLS / ANOVA</span>
+              </div>
+              <button class="btn btn-outline btn-xs mono" type="button" onclick="openInWorkbench('rshiny')">Simulate &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="proj-card" data-cat="analytics">
+            <div>
+              <div class="proj-header">
+                <span class="proj-idx mono">PRJ // 04</span>
+                <span class="proj-year mono">2024</span>
+              </div>
+              <h3 class="proj-name">Stock Comparison Web App</h3>
+              <div class="proj-role mono">Real-Time Equity Trend &amp; Scraper App</div>
+              <p class="proj-summary">
+                Developed using Streamlit, BeautifulSoup, and yfinance to compare multi-asset stock prices, extract market metrics, and visualize comparative trends interactively.
+              </p>
+              <div class="arch-flow">
+                <div class="arch-flow-title mono">Pipeline Architecture</div>
+                <div class="arch-steps mono">
+                  <span>yfinance API</span><span class="arch-sep">+</span>
+                  <span>BeautifulSoup</span><span class="arch-sep">-&gt;</span>
+                  <span>Streamlit Charts</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <div class="chip-list">
+                <span class="tech-pill mono">Streamlit</span>
+                <span class="tech-pill mono">yfinance</span>
+                <span class="tech-pill mono">BeautifulSoup</span>
+              </div>
+              <button class="btn btn-outline btn-xs mono" type="button" onclick="openInWorkbench('stockapp')">Simulate &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="proj-card" data-cat="ai">
+            <div>
+              <div class="proj-header">
+                <span class="proj-idx mono">PRJ // 05</span>
+                <span class="proj-year mono">2021</span>
+              </div>
+              <h3 class="proj-name">AI E-Learning Chatbot</h3>
+              <div class="proj-role mono">Voice-Enabled Student Query Assistant</div>
+              <p class="proj-summary">
+                Built using Python, pyttsx3, and Wikipedia API to deliver interactive voice and text responses for student academic queries.
+              </p>
+              <div class="arch-flow">
+                <div class="arch-flow-title mono">Pipeline Architecture</div>
+                <div class="arch-steps mono">
+                  <span>Student Query</span><span class="arch-sep">-&gt;</span>
+                  <span>Wikipedia API</span><span class="arch-sep">-&gt;</span>
+                  <span>pyttsx3 Audio</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <div class="chip-list">
+                <span class="tech-pill mono">Python</span>
+                <span class="tech-pill mono">pyttsx3</span>
+                <span class="tech-pill mono">Wikipedia API</span>
+              </div>
+              <button class="btn btn-outline btn-xs mono" type="button" onclick="openInWorkbench('chatbot')">Simulate &rarr;</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Interactive Project Architecture Workbench -->
+        <div class="workbench-panel" id="workbench">
+          <div class="workbench-top">
+            <div>
+              <div class="eyebrow-num mono" style="margin-bottom: 4px;">INTERACTIVE ARCHITECTURE WORKBENCH</div>
+              <h3 id="sim-title" style="font-size: 1.25rem; font-weight: 800;">Graph Net – Intelligent Knowledge Graph (2025)</h3>
+            </div>
+            <div class="sim-tabs">
+              <button class="sim-tab active mono" data-sim="graphnet" type="button">Graph Net</button>
+              <button class="sim-tab mono" data-sim="argml" type="button">ARG No-Code ML</button>
+              <button class="sim-tab mono" data-sim="rshiny" type="button">R Shiny Tool</button>
+              <button class="sim-tab mono" data-sim="stockapp" type="button">Stock App</button>
+              <button class="sim-tab mono" data-sim="chatbot" type="button">AI Chatbot</button>
+            </div>
+          </div>
+
+          <div class="sim-stage" id="workbench-panel">
+            <div class="sim-controls-box">
+              <p id="sim-desc" style="color: var(--text-body); font-size: 0.9rem;"></p>
+              <div class="node-chain" id="sim-nodes"></div>
+            </div>
+
+            <div class="sim-output-box mono">
+              <div style="font-size: 0.74rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.08em;">
+                &gt;&gt; STAGE EXECUTION OUTPUT
+              </div>
+              <div id="sim-output" style="font-size: 0.9rem; color: var(--text-main); margin: 14px 0;"></div>
+              <div style="font-size: 0.74rem; color: var(--tertiary);">
+                STATUS: VERIFIED PRODUCTION WORKFLOW
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IEEE Research & Interactive CNN Hyperparameter Lab -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow-num mono">03 // PUBLISHED RESEARCH &amp; SIMULATOR</div>
+            <h2 class="sec-title">IEEE Deep Learning Publication</h2>
+          </div>
+        </div>
+
+        <article class="research-lab">
+          <div>
+            <span class="badge-date mono" style="display: inline-block; margin-bottom: 14px;">IEEE PAPER // DEEP LEARNING</span>
+            <h3 style="font-size: clamp(1.35rem, 2.3vw, 1.75rem); font-weight: 900; line-height: 1.28; margin-bottom: 14px;">
+              Synergistic Effects of Learning Rate, Optimizer &amp; Activation Function on CNN Training
+            </h3>
+            <p style="color: var(--text-body); font-size: 0.96rem; margin-bottom: 20px;">
+              Compared multiple activation functions and optimization algorithms paired with dynamic learning rate tuning to evaluate convergence speed, gradient stability, and generalization accuracy in Convolutional Neural Networks (CNNs).
+            </p>
+            <div class="chip-list">
+              <span class="tech-pill mono">Convolutional Neural Networks (CNN)</span>
+              <span class="tech-pill mono">Dynamic Learning Rate</span>
+              <span class="tech-pill mono">Optimizers</span>
+              <span class="tech-pill mono">Activation Functions</span>
+            </div>
+          </div>
+
+          <!-- Interactive CNN Convergence Simulator -->
+          <div class="cnn-simulator">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <strong class="mono" style="font-size: 0.82rem; color: var(--secondary);">INTERACTIVE CNN SYNERGY LAB</strong>
+              <span class="mono" style="font-size: 0.72rem; color: var(--text-dim);">Toggle Hyperparameters</span>
+            </div>
+
+            <div class="sim-select-grid">
+              <div class="sim-field">
+                <label for="cnn-opt" class="mono">Optimizer</label>
+                <select id="cnn-opt">
+                  <option value="adam">Adam</option>
+                  <option value="sgd">SGD + Momentum</option>
+                  <option value="rmsprop">RMSprop</option>
+                </select>
+              </div>
+              <div class="sim-field">
+                <label for="cnn-act" class="mono">Activation</label>
+                <select id="cnn-act">
+                  <option value="relu">ReLU</option>
+                  <option value="gelu">GELU / Swish</option>
+                  <option value="leaky">Leaky ReLU</option>
+                </select>
+              </div>
+              <div class="sim-field">
+                <label for="cnn-lr" class="mono">LR Schedule</label>
+                <select id="cnn-lr">
+                  <option value="dynamic">Dynamic LR</option>
+                  <option value="step">Step Decay</option>
+                  <option value="static">Static LR</option>
+                </select>
+              </div>
+            </div>
+
+            <canvas id="cnn-chart"></canvas>
+            <div class="cnn-readout mono">
+              <span id="cnn-acc" style="color: var(--tertiary); font-weight: 700;">Validation Accuracy: 96.4%</span>
+              <span id="cnn-conv">Stability: High (Dynamic LR Synergy)</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow-num mono">04 // TECHNICAL ARSENAL</div>
+            <h2 class="sec-title">Skills &amp; Domain Proficiency</h2>
+          </div>
+          <p class="sec-sub">
+            Comprehensive command across statistical programming, deep learning frameworks, graph &amp; relational databases, BI analytics, and cloud MLOps.
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Programming -->
+          <div class="skill-box">
+            <div class="skill-box-head">
+              <h3 class="skill-cat-name">Programming Languages</h3>
+              <span class="skill-cat-code mono">CORE // 01</span>
+            </div>
+            <div class="skill-bars">
+              <div>
+                <div class="skill-row-top"><span>Python</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 96%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>R &amp; Statistical Computing</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>SQL</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>Java &amp; MATLAB</span><span class="mono">Proficient</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ML & DL -->
+          <div class="skill-box">
+            <div class="skill-box-head">
+              <h3 class="skill-cat-name">Machine Learning &amp; Deep Learning</h3>
+              <span class="skill-cat-code mono">AI // 02</span>
+            </div>
+            <div class="skill-bars">
+              <div>
+                <div class="skill-row-top"><span>Scikit-learn &amp; Feature Engineering</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>TensorFlow &amp; PyTorch</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 91%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>CNN &amp; ANN Architectures</span><span class="mono">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row-top"><span>Model Deployment &amp; Monitoring</span><span class="mono">Proficient</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & BI -->
+          <div class="skill-box">
+            <div class="skill-box-head">
+              <h3 class="skill-cat-name">Data Science &amp; BI Tools</h3>
+              <span class="skill-cat-code mono">TOOLS // 03</span>
+            </div>
+            <div class="chip-list" style="margin-top: 8px;">
+              <span class="tech-pill mono">Pandas</span>
+              <span class="tech-pill mono">NumPy</span>
+              <span class="tech-pill mono">Tableau</span>
+              <span class="tech-pill mono">Power BI</span>
+              <span class="tech-pill mono">Matplotlib</span>
+              <span class="tech-pill mono">Seaborn</span>
+              <span class="tech-pill mono">Jupyter Notebook</span>
+              <span class="tech-pill mono">Git</span>
+              <span class="tech-pill mono">Streamlit</span>
+            </div>
+            <p style="font-size: 0.83rem; color: var(--text-dim); margin-top: 16px;">
+              End-to-end exploratory data analysis, automated ETL cleaning, interactive dashboarding, and version-controlled experimentation.
+            </p>
+          </div>
+
+          <!-- Databases & Cloud -->
+          <div class="skill-box">
+            <div class="skill-box-head">
+              <h3 class="skill-cat-name">Databases &amp; Cloud MLOps</h3>
+              <span class="skill-cat-code mono">INFRA // 04</span>
+            </div>
+            <div class="chip-list" style="margin-top: 8px;">
+              <span class="tech-pill mono">MySQL</span>
+              <span class="tech-pill mono">MongoDB</span>
+              <span class="tech-pill mono">Neo4j (Graph DB)</span>
+              <span class="tech-pill mono">AWS</span>
+              <span class="tech-pill mono">Oracle Cloud (OCI)</span>
+              <span class="tech-pill mono">Cloud Integration</span>
+              <span class="tech-pill mono">Deployment Pipelines</span>
+            </div>
+            <p style="font-size: 0.83rem; color: var(--text-dim); margin-top: 16px;">
+              Relational, document, and graph data modeling paired with AWS and OCI cloud deployment pipelines.
+            </p>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-box">
+            <div class="skill-box-head">
+              <h3 class="skill-cat-name">Professional &amp; Leadership Skills</h3>
+              <span class="skill-cat-code mono">SOFT // 05</span>
+            </div>
+            <div class="chip-list" style="margin-top: 8px;">
+              <span class="tech-pill mono">Communication &amp; Presentation</span>
+              <span class="tech-pill mono">Team Collaboration</span>
+              <span class="tech-pill mono">Analytical Thinking</span>
+              <span class="tech-pill mono">Problem-Solving</span>
+              <span class="tech-pill mono">Adaptability</span>
+              <span class="tech-pill mono">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education (CGPA 8.69) & Certifications -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow-num mono">05 // ACADEMIC CREDENTIALS</div>
+            <h2 class="sec-title">Education &amp; Certifications</h2>
+          </div>
+        </div>
+
+        <div class="dual-grid">
+          <div class="surface-card">
+            <h3 class="card-h3" style="margin-bottom: 18px;">Academic Degrees</h3>
+            <div class="edu-cards">
+              <div class="edu-item">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+                  <span class="badge-date mono">2024 – 2026</span>
+                  <span class="cgpa-highlight mono">CGPA: 8.69 / 10.0</span>
+                </div>
+                <h4 style="font-size: 1.18rem; font-weight: 800; margin-bottom: 4px;">M.Sc. Data Science</h4>
+                <div class="mono" style="color: var(--secondary); font-size: 0.9rem; font-weight: 700; margin-bottom: 12px;">
+                  Vellore Institute of Technology (VIT-AP)
+                </div>
+                <div style="font-size: 0.76rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; font-weight: 700;">
+                  Relevant Coursework
+                </div>
+                <div class="chip-list">
+                  <span class="tech-pill mono">Machine Learning</span>
+                  <span class="tech-pill mono">Deep Learning</span>
+                  <span class="tech-pill mono">Data Mining</span>
+                  <span class="tech-pill mono">Cloud Computing</span>
+                  <span class="tech-pill mono">Statistical Modeling</span>
+                  <span class="tech-pill mono">Advanced Analytics</span>
+                  <span class="tech-pill mono">Big Data Processing</span>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <div style="margin-bottom: 10px;">
+                  <span class="badge-date mono">2020 – 2023</span>
+                </div>
+                <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 4px;">B.Sc. Mathematics</h4>
+                <div class="mono" style="color: var(--secondary); font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">
+                  BRABU University
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-body);">
+                  Strong mathematical foundation in linear algebra, calculus, probability distributions, and statistical inference.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="surface-card">
+            <h3 class="card-h3" style="margin-bottom: 18px;">Certifications &amp; Training</h3>
+            <div class="cert-grid">
+              <div class="cert-row">
+                <span class="cert-title">Oracle Generative AI Professional</span>
+                <span class="cert-org mono">Oracle • 2025</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">AWS Cloud Essentials</span>
+                <span class="cert-org mono">AWS • 2025</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">Python ML (Beginner &amp; Advanced)</span>
+                <span class="cert-org mono">NIT Warangal</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">Remote Sensing &amp; GIS</span>
+                <span class="cert-org mono">ISRO</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">Data Analytics &amp; Visualization Job Simulation</span>
+                <span class="cert-org mono">Accenture</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">German A1–A2 Certification</span>
+                <span class="cert-org mono">IIT Madras</span>
+              </div>
+              <div class="cert-row">
+                <span class="cert-title">TCS iON Career Edge — Soft Skills</span>
+                <span class="cert-org mono">TCS iON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <div class="eyebrow-num mono">06 // DIRECT CONTACT</div>
+            <h2 class="sec-title" style="margin-bottom: 12px;">Let's Collaborate on Data &amp; AI</h2>
+            <p style="color: var(--text-body); font-size: 0.95rem;">
+              Open to full-time Data Scientist, Machine Learning Engineer, AI Cloud, and Analytics opportunities. Connect directly via email, phone, or professional channels below.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-dim);">EMAIL ADDRESS</div>
+                  <a href="mailto:abhishek.k.jalandhar@gmail.com" class="mono" style="font-weight: 700; font-size: 0.9rem;">abhishek.k.jalandhar@gmail.com</a>
+                </div>
+                <button class="btn btn-outline btn-xs mono" type="button" onclick="copyToClip('abhishek.k.jalandhar@gmail.com', 'Email copied to clipboard!')">COPY</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-dim);">PHONE NUMBER</div>
+                  <a href="tel:+917888873321" class="mono" style="font-weight: 700; font-size: 0.9rem;">+91 7888873321</a>
+                </div>
+                <button class="btn btn-outline btn-xs mono" type="button" onclick="copyToClip('+91 7888873321', 'Phone number copied!')">COPY</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-dim);">GITHUB REPOSITORY &amp; PROFILES</div>
+                  <div class="mono" style="font-size: 0.84rem; font-weight: 700; margin-top: 2px;">
+                    <a href="https://github.com/Abhi-VIT/Profile/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary);">github.com/Abhi-VIT/Profile</a> &bull;
+                    <a href="https://www.linkedin.com/in/abhipy" target="_blank" rel="noopener noreferrer" style="color: var(--secondary);">LinkedIn</a> &bull;
+                    <a href="https://leetcode.com/u/ft31DEgRSt/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary);">LeetCode</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <h3 style="font-size: 1.12rem; font-weight: 800; margin-bottom: 14px;">Send a Direct Message</h3>
+            <form id="contact-form">
+              <div class="field-group">
+                <label for="c-name">Your Name / Company</label>
+                <input type="text" id="c-name" class="input-ctrl" placeholder="Recruiter / Hiring Team" required />
+              </div>
+              <div class="field-group">
+                <label for="c-subj">Subject</label>
+                <input type="text" id="c-subj" class="input-ctrl" placeholder="Data Science / ML Role Inquiry" required />
+              </div>
+              <div class="field-group">
+                <label for="c-body">Message</label>
+                <textarea id="c-body" rows="4" class="input-ctrl" placeholder="Hi Abhishek, we'd love to discuss an opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Compose Email &rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© Abhishek Kumar</small>
+  <!-- Command Palette Modal (Ctrl+K) -->
+  <div class="cmd-backdrop" id="cmd-backdrop" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-modal">
+      <div class="cmd-input-wrap">
+        <span class="mono" style="color: var(--secondary); font-weight: 800;">&gt;_</span>
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or section (e.g. projects, research, theme, email)..." />
+        <span class="kbd mono">ESC</span>
+      </div>
+      <div class="cmd-list">
+        <button class="cmd-item" type="button" onclick="runCmd('#projects')">
+          <span>Jump to Key Projects (5 Systems)</span><span class="mono">Section</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('#workbench')">
+          <span>Open Interactive Architecture Workbench</span><span class="mono">Simulator</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('#research')">
+          <span>Open IEEE CNN Hyperparameter Synergy Lab</span><span class="mono">Research</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('#education')">
+          <span>View Education (M.Sc. Data Science — CGPA 8.69)</span><span class="mono">Academic</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('copy-email')">
+          <span>Copy Email (abhishek.k.jalandhar@gmail.com)</span><span class="mono">Clipboard</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('https://github.com/Abhi-VIT/Profile/')">
+          <span>Open GitHub Repo (github.com/Abhi-VIT/Profile)</span><span class="mono">External</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('https://www.linkedin.com/in/abhipy')">
+          <span>Open LinkedIn (linkedin.com/in/abhipy)</span><span class="mono">External</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('theme:obsidian')">
+          <span>Switch Theme: Cyber Obsidian</span><span class="mono">Theme</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('theme:emerald')">
+          <span>Switch Theme: Emerald Matrix</span><span class="mono">Theme</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('theme:solaris')">
+          <span>Switch Theme: Solaris Gold</span><span class="mono">Theme</span>
+        </button>
+        <button class="cmd-item" type="button" onclick="runCmd('theme:light')">
+          <span>Switch Theme: Alabaster Light</span><span class="mono">Theme</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <strong>Abhishek Kumar</strong> — Data Scientist | Machine Learning | Analytics &bull; M.Sc. Data Science (CGPA: 8.69)
+      </div>
+      <div class="mono">
+        <a href="https://abhi-vit.github.io/Profile/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary);">abhi-vit.github.io/Profile</a> &bull;
+        <a href="https://github.com/Abhi-VIT/Profile/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary);">github.com/Abhi-VIT/Profile</a>
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-</body>
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied!</div>
 
+  <!-- External Script for GitHub Pages -->
+  <script src="script.js"></script>
+  <!-- Inline Fallback Script so single-file preview is 100% interactive -->
+  <script id="inline-fallback-js">
+/* ==========================================================================
+   Abhishek Kumar — Interactive Portfolio Engine (script.js)
+   Repository: https://github.com/Abhi-VIT/Profile/
+   Live Site:  https://abhi-vit.github.io/Profile/
+   ========================================================================== */
+
+(function () {
+  'use strict';
+
+  // 1. Scroll Progress Bar & Cursor Spotlight
+  const progressBar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', () => {
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    if (progressBar) progressBar.style.width = scrolled + '%';
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    document.documentElement.style.setProperty('--cursor-x', e.clientX + 'px');
+    document.documentElement.style.setProperty('--cursor-y', e.clientY + 'px');
+  });
+
+  // 2. Multi-Theme Switcher
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.addEventListener('change', (e) => {
+      document.documentElement.setAttribute('data-theme', e.target.value);
+      drawCNNChart();
+    });
+  }
+
+  // 3. Mobile Menu Toggle
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  }
+
+  // 4. Dynamic Hero Typewriter
+  const roles = [
+    'Data Scientist & Analytics Specialist',
+    'Machine Learning & Deep Learning Engineer',
+    'AI-Powered Data Insights Intern @ TOEHO AI',
+    'TCS AI Cloud (SE) Digital Selected',
+    'IEEE Published Deep Learning Researcher'
+  ];
+  const typeTarget = document.getElementById('typewriter-text');
+  let roleIdx = 0;
+  let charIdx = 0;
+  let deleting = false;
+
+  function stepTypewriter() {
+    if (!typeTarget) return;
+    const current = roles[roleIdx];
+    if (!deleting) {
+      charIdx++;
+      typeTarget.textContent = current.slice(0, charIdx);
+      if (charIdx === current.length) {
+        deleting = true;
+        setTimeout(stepTypewriter, 1900);
+        return;
+      }
+      setTimeout(stepTypewriter, 52);
+    } else {
+      charIdx--;
+      typeTarget.textContent = current.slice(0, charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        roleIdx = (roleIdx + 1) % roles.length;
+        setTimeout(stepTypewriter, 260);
+        return;
+      }
+      setTimeout(stepTypewriter, 26);
+    }
+  }
+  stepTypewriter();
+
+  // 5. Interactive Hero Telemetry Tabs (Python Profile / JSON Specs / CLI)
+  const winTabs = document.querySelectorAll('.win-tab');
+  const winPanes = document.querySelectorAll('.window-pane');
+  winTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      winTabs.forEach((t) => t.classList.remove('active'));
+      winPanes.forEach((p) => p.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById(tab.getAttribute('data-pane'));
+      if (target) target.classList.add('active');
+    });
+  });
+
+  // 6. Project Filtering & 3D Card Tilt Effect
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const projCards = document.querySelectorAll('.proj-card');
+
+  filterTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.getAttribute('data-filter');
+      projCards.forEach((card) => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  projCards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotY = ((x / rect.width) - 0.5) * 6;
+      const rotX = ((y / rect.height) - 0.5) * -6;
+      card.style.transform = `perspective(900px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+
+  // 7. Interactive Project Workbench Simulator
+  const simData = {
+    graphnet: {
+      title: 'Graph Net – Intelligent Knowledge Graph (2025)',
+      desc: 'Click any concept node below to simulate Neo4j & NetworkX prerequisite sequencing and personalized recommendation ranking:',
+      nodes: [
+        { label: '01. Web Scraping Corpus', out: 'Extracted raw domain entities & topic dependencies from educational documents using Python scraping pipelines.' },
+        { label: '02. Neo4j Graph Storage', out: 'Constructed directed property graph with 1,200+ concept nodes and prerequisite edge weights in Neo4j.' },
+        { label: '03. NetworkX Centrality', out: 'Computed PageRank & topological sorting via NetworkX to rank prerequisite criticality.' },
+        { label: '04. Personalized Path', out: 'Recommended optimal learning path: Linear Algebra -> Probability -> ML Foundations -> Deep Learning CNNs.' }
+      ]
+    },
+    argml: {
+      title: 'ARG Data & Modeling – No-Code ML Platform (2025)',
+      desc: 'Inspect each drag-and-drop workflow module powered by TensorFlow, PyTorch, Pandas, and NumPy:',
+      nodes: [
+        { label: '01. Drag & Drop Ingestion', out: 'Automated schema detection, missing-value imputation, and outlier trimming with Pandas & NumPy.' },
+        { label: '02. Feature Engineering', out: 'One-hot encoding, standard scaling, and correlation pruning with instant visual distribution feedback.' },
+        { label: '03. Model Training Engine', out: 'Parallel training across Scikit-learn, TensorFlow, and PyTorch backends with automated hyperparameter grid search.' },
+        { label: '04. One-Click Deployment', out: 'Exported trained pipeline with live inference endpoint and drift monitoring metrics.' }
+      ]
+    },
+    rshiny: {
+      title: 'Dynamic R Dataset Analysis Tool (2025)',
+      desc: 'Explore the no-code R Shiny statistical analysis & automated dashboard engines:',
+      nodes: [
+        { label: '01. OLS & ANOVA Suite', out: 'Interactive Ordinary Least Squares regression & multi-group ANOVA tables with F-statistic and p-value diagnostics.' },
+        { label: '02. Hypothesis Testing', out: 'Automated t-tests, Chi-square tests, and normality checks (Shapiro-Wilk) with plain-language statistical conclusions.' },
+        { label: '03. Correlation & Heatmaps', out: 'Dynamic Pearson/Spearman correlation matrices and multi-variable pair plots.' },
+        { label: '04. Time-Series & KPIs', out: 'Seasonal decomposition, rolling averages, and executive monitoring dashboards.' }
+      ]
+    },
+    stockapp: {
+      title: 'Stock Comparison Web App (2024)',
+      desc: 'Inspect how Streamlit, BeautifulSoup, and yfinance combine for real-time equity analysis:',
+      nodes: [
+        { label: '01. yfinance Live Feed', out: 'Fetched historical OHLCV time-series and volume data across multiple global stock tickers.' },
+        { label: '02. BeautifulSoup Scraper', out: 'Parsed key financial ratios, market headlines, and fundamental indicators from financial web pages.' },
+        { label: '03. Comparative Charts', out: 'Rendered normalized return curves, moving averages, and volatility bands inside Streamlit.' }
+      ]
+    },
+    chatbot: {
+      title: 'AI E-Learning Chatbot (2021)',
+      desc: 'Test the interactive student query & voice synthesis workflow:',
+      nodes: [
+        { label: '01. Student Query Parser', out: 'Processed natural-language academic questions from students across STEM topics.' },
+        { label: '02. Wikipedia API Engine', out: 'Retrieved and summarized verified encyclopedic paragraphs matching the query context.' },
+        { label: '03. pyttsx3 Voice Output', out: 'Synthesized clear offline text-to-speech audio responses alongside formatted text explanations.' }
+      ]
+    }
+  };
+
+  const simTabs = document.querySelectorAll('.sim-tab');
+  const simTitle = document.getElementById('sim-title');
+  const simDesc = document.getElementById('sim-desc');
+  const simNodes = document.getElementById('sim-nodes');
+  const simOutput = document.getElementById('sim-output');
+
+  function renderWorkbench(key) {
+    const item = simData[key];
+    if (!item || !simTitle) return;
+    simTitle.textContent = item.title;
+    simDesc.textContent = item.desc;
+    simNodes.innerHTML = '';
+    item.nodes.forEach((n, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'node-btn' + (idx === 0 ? ' active' : '');
+      btn.textContent = n.label;
+      btn.addEventListener('click', () => {
+        simNodes.querySelectorAll('.node-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        simOutput.textContent = n.out;
+      });
+      simNodes.appendChild(btn);
+    });
+    simOutput.textContent = item.nodes[0].out;
+  }
+
+  simTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      simTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      renderWorkbench(tab.getAttribute('data-sim'));
+    });
+  });
+
+  // Allow project cards' "Launch in Workbench" button to select that project
+  window.openInWorkbench = function (key) {
+    simTabs.forEach((t) => {
+      t.classList.toggle('active', t.getAttribute('data-sim') === key);
+    });
+    renderWorkbench(key);
+    const panel = document.getElementById('workbench-panel');
+    if (panel) panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  renderWorkbench('graphnet');
+
+  // 8. Interactive IEEE CNN Hyperparameter Synergy Simulator Canvas
+  const cnnCanvas = document.getElementById('cnn-chart');
+  const optSel = document.getElementById('cnn-opt');
+  const actSel = document.getElementById('cnn-act');
+  const lrSel = document.getElementById('cnn-lr');
+  const accReadout = document.getElementById('cnn-acc');
+  const convReadout = document.getElementById('cnn-conv');
+
+  function drawCNNChart() {
+    if (!cnnCanvas) return;
+    const ctx = cnnCanvas.getContext('2d');
+    const w = (cnnCanvas.width = cnnCanvas.clientWidth || 420);
+    const h = (cnnCanvas.height = cnnCanvas.clientHeight || 170);
+    ctx.clearRect(0, 0, w, h);
+
+    const opt = optSel ? optSel.value : 'adam';
+    const act = actSel ? actSel.value : 'relu';
+    const lr = lrSel ? lrSel.value : 'dynamic';
+
+    let baseAcc = 88.0;
+    let speed = 0.14;
+    if (opt === 'adam') { baseAcc += 4.2; speed += 0.05; }
+    if (opt === 'sgd') { baseAcc += 2.8; speed += 0.02; }
+    if (act === 'gelu') { baseAcc += 2.1; speed += 0.03; }
+    if (act === 'relu') { baseAcc += 1.6; speed += 0.02; }
+    if (lr === 'dynamic') { baseAcc += 2.6; speed += 0.04; }
+    if (lr === 'step') { baseAcc += 1.2; }
+
+    const finalAcc = Math.min(97.8, baseAcc).toFixed(1);
+    if (accReadout) accReadout.textContent = `Validation Accuracy: ${finalAcc}%`;
+    if (convReadout) convReadout.textContent = lr === 'dynamic' ? 'Stability: High (Dynamic LR Synergy)' : 'Stability: Moderate';
+
+    // Grid lines
+    ctx.strokeStyle = 'rgba(148, 163, 184, 0.15)';
+    ctx.lineWidth = 1;
+    for (let i = 1; i <= 3; i++) {
+      const y = (h / 4) * i;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+
+    // Plot training accuracy curve
+    ctx.beginPath();
+    const steps = 40;
+    for (let i = 0; i <= steps; i++) {
+      const x = (i / steps) * (w - 24) + 12;
+      const progress = 1 - Math.exp(-speed * i * 1.4);
+      const normAcc = (finalAcc / 100) * progress;
+      const y = h - 18 - normAcc * (h - 36);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.strokeStyle = '#06b6d4';
+    ctx.lineWidth = 3;
+    ctx.stroke();
+  }
+
+  [optSel, actSel, lrSel].forEach((el) => {
+    if (el) el.addEventListener('change', drawCNNChart);
+  });
+  window.addEventListener('resize', drawCNNChart);
+  setTimeout(drawCNNChart, 60);
+
+  // 9. Command Palette (Ctrl+K / Cmd+K)
+  const cmdBackdrop = document.getElementById('cmd-backdrop');
+  const cmdOpenBtn = document.getElementById('cmd-open-btn');
+  const cmdInput = document.getElementById('cmd-input');
+  const cmdItems = document.querySelectorAll('.cmd-item');
+
+  function toggleCmd(open) {
+    if (!cmdBackdrop) return;
+    const next = typeof open === 'boolean' ? open : !cmdBackdrop.classList.contains('open');
+    cmdBackdrop.classList.toggle('open', next);
+    if (next && cmdInput) {
+      cmdInput.value = '';
+      filterCmd('');
+      setTimeout(() => cmdInput.focus(), 50);
+    }
+  }
+
+  function filterCmd(q) {
+    const query = q.toLowerCase();
+    cmdItems.forEach((item) => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(query) ? 'flex' : 'none';
+    });
+  }
+
+  if (cmdOpenBtn) cmdOpenBtn.addEventListener('click', () => toggleCmd(true));
+  if (cmdBackdrop) {
+    cmdBackdrop.addEventListener('click', (e) => {
+      if (e.target === cmdBackdrop) toggleCmd(false);
+    });
+  }
+  if (cmdInput) {
+    cmdInput.addEventListener('input', (e) => filterCmd(e.target.value));
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      toggleCmd();
+    } else if (e.key === 'Escape') {
+      toggleCmd(false);
+    }
+  });
+
+  window.runCmd = function (action) {
+    toggleCmd(false);
+    if (action.startsWith('#')) {
+      const el = document.querySelector(action);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else if (action.startsWith('theme:')) {
+      const th = action.split(':')[1];
+      document.documentElement.setAttribute('data-theme', th);
+      if (themeSelect) themeSelect.value = th;
+      drawCNNChart();
+    } else if (action === 'copy-email') {
+      window.copyToClip('abhishek.k.jalandhar@gmail.com', 'Email copied to clipboard!');
+    } else if (action.startsWith('http')) {
+      window.open(action, '_blank', 'noopener');
+    }
+  };
+
+  // 10. Copy to Clipboard & Mailto Form
+  window.copyToClip = function (text, msg) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+    }
+    const toast = document.getElementById('toast');
+    if (toast) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+  };
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('c-name').value.trim();
+      const subj = document.getElementById('c-subj').value.trim();
+      const body = document.getElementById('c-body').value.trim();
+      window.location.href = `mailto:abhishek.k.jalandhar@gmail.com?subject=${encodeURIComponent(subj + ' — ' + name)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+
+  // 11. Interactive Hero Particle Constellation (HTML5 Canvas, Zero SVG)
+  const canvas = document.getElementById('constellation-canvas');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let pts = [];
+
+    function initConstellation() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      pts = [];
+      const count = Math.min(42, Math.floor((canvas.width * canvas.height) / 21000));
+      for (let i = 0; i < count; i++) {
+        pts.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.45,
+          vy: (Math.random() - 0.5) * 0.45,
+          r: Math.random() * 1.8 + 1.2
+        });
+      }
+    }
+
+    function loopConstellation() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < pts.length; i++) {
+        const p = pts[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(99, 102, 241, 0.55)';
+        ctx.fill();
+
+        for (let j = i + 1; j < pts.length; j++) {
+          const q = pts[j];
+          const dx = p.x - q.x;
+          const dy = p.y - q.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 130) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.strokeStyle = `rgba(6, 182, 212, ${(1 - d / 130) * 0.22})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(loopConstellation);
+    }
+
+    window.addEventListener('resize', initConstellation);
+    initConstellation();
+    loopConstellation();
+  }
+})();
+
+  </script>
+</body>
 </html>
